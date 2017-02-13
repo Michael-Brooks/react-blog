@@ -29,7 +29,7 @@ class App extends Component {
       state: 'posts',
       asArray: true,
       then() {
-        this.setState({loading: false})
+        this.setState({ loading: false })
       }
     });
 
@@ -38,13 +38,14 @@ class App extends Component {
       state: 'categories',
       asArray: true,
       then() {
-        this.setState({loading: false})
+        this.setState({ loading: false })
       }
-    })
+    });
   }
 
   componentWillUnmount() {
     base.removeBinding(this.posts);
+    base.removeBinding(this.categories);
   }
 
   handleChange(e) {

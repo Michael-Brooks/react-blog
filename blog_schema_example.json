@@ -1,19 +1,19 @@
 {
   "categories" : {
-    "one" : {
+    "first-example-category" : {
       "name" : "First example category"
     }
   },
   "posts" : {
-    "one" : {
+    "first-example-blog-post" : {
       "content" : "This is my first post",
       "title" : "First example blog post"
     },
-    "three" : {
+    "third-example-blog-post" : {
       "content" : "This is my third blog post",
       "title" : "Third example Blog post"
     },
-    "two" : {
+    "second-example-blog-post" : {
       "content" : "This is my second blog post",
       "title" : "Second example blog post"
     }

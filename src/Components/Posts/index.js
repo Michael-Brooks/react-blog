@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router';
 
 import Nav from '../Navigation';
 
@@ -20,7 +21,6 @@ class Posts extends Component {
         <Nav {...this.props} />
         <div className="columns">
           { libraries.map(function (post, index) {
-            const slug = `/post`;
             return (
               <div key={index} className="column is-one-third">
                 <div className="card">
@@ -42,7 +42,7 @@ class Posts extends Component {
                     </div>
 
                     <div className="content">
-                      {post.content.substr(0, 500)}... <a href={slug}>Read More</a>
+                      {post.content.substr(0, 500)}... <Link to={ `/post/${post.key}` }>Read More</Link>
                       <hr />
                       <small>Michael Brooks</small>
                       <br />

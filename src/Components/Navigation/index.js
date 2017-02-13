@@ -10,9 +10,6 @@ class Nav extends Component {
           <a href="/" className="nav-item">
             <h1>{process.env.REACT_APP_NAME}</h1>
           </a>
-
-          <Link className="nav-item" to="/about">About</Link>
-          <Link className="nav-item" to="/repos">Repos</Link>
         </div>
 
         <div className="nav-center">
